@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Font loading: Preconnect improves font load speed -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Inter font: 400, 500, 600, 700 weights -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main stylesheet for layout and component styling -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Dev indicator: Shows markup version; fixed at top center -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Pricing cards: Horizontal layout, 24px gap -->
     <div class="cards-container">
+        <!-- Card 1: Hobby tier (free) -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
@@ -36,8 +44,11 @@
                     </ul>
                 </div>
             </div>
+            <!-- secondary: light gray button (default style) -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Card 2: Pro tier ($20/mo) -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
@@ -46,6 +57,7 @@
                     <span class="card-price-period">/mo.</span>
                 </p>
                 <div class="card-content">
+                    <!-- Pro upsell copy: references Hobby tier -->
                     <p class="includes-text">Everything in Hobby, plus:</p>
                     <ul class="features-list">
                         <li>
@@ -67,7 +79,42 @@
                     </ul>
                 </div>
             </div>
+            <!-- primary: dark button variant for emphasis -->
             <button class="download-button primary">Get Pro</button>
+        </div>
+
+        <!-- Card 3: Enterprise tier (custom pricing) -->
+        <div class="card">
+            <div class="card-top">
+                <h3 class="card-title">Enterprise</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">Custom</span>
+                </p>
+                <div class="card-content">
+                    <!-- Enterprise upsell copy: references Pro tier -->
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            SSO & advanced security
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Dedicated support
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Custom integrations
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            SLA guarantee
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- primary: dark button for highest tier CTA -->
+            <button class="download-button primary">Contact sales</button>
         </div>
     </div>
 </body>
